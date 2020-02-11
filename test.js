@@ -1,8 +1,8 @@
 console.log('Hi, my name is Brandon and I'm 27 years old');
 
 function createGreeting() {
-    console.log('Hi, our names our Brandon and Trina!')
+    return 'Brandon and Trina want to sell hello world!';
 }
 
-createGreeting();
-
+const greeting1 = createGreeting();
+console.log(greeting1);
