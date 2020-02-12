@@ -24,7 +24,7 @@ function beyond(num) {
   }
   return;
 }
-beyond(0);
+beyond(7786869768);
 
 function decode(sentence) {
   let words = sentence.split(' ');
@@ -107,10 +107,10 @@ function game (num){
   console.log(`I chose ${randomNo}`);
   console.log(`You chose ${num}`);
   try {
-    (num < 1) || (num > 3);
+    ((num < 1) || (num > 3) || (typeof num !== Number));
   }
   catch(error){
-    console.error('Number must be between 1 and three');
+    throw new error ('Number must be between 1 and three');
   }
   if (randomNo === num){
     console.log('Its a tie!');
@@ -122,4 +122,4 @@ function game (num){
     console.log('You win!');
   }
 }
-game(3);
+game();
